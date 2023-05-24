@@ -1,15 +1,10 @@
 import { styled } from "styled-components"
 
-const UlEstilizada = styled.ul`
+const ListaNavegacao = styled.ul`
     list-style: none;
     padding: 0;
     margin: 0;
+    min-width: 260px;
 `
-
-const ListaNavegacao = ({children}) => {
-    return <UlEstilizada>
-        {children}
-    </UlEstilizada>
-}
 
 export default ListaNavegacao

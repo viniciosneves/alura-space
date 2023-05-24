@@ -8,6 +8,8 @@ const FigureEstilizada = styled.figure`
     align-items: center;
     min-height: 328px;
     margin: 0;
+    border-radius: 20px;
+    max-width: 100%;
 `
 
 const TituloEstilizado = styled.h1`

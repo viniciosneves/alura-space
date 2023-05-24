@@ -8,6 +8,7 @@ const ItemEstilizado = styled.li`
     align-items: center;
     gap: 22px;
     margin-bottom: 30px;
+    cursor: pointer;
 `
 
 const ItemNavegacao = ({texto, iconeSrc, ativo = false}) => {
