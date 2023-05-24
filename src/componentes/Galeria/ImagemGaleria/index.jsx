@@ -10,10 +10,12 @@ const Figure = styled.figure`
         border-radius: 0px 0px 20px 20px;
         color: white;
         box-sizing: border-box;
-        max-width: 100%;
         padding: 12px;
         h3 {
-            font-family: GandhiSansBold;
+            font-family: 'GandhiSansBold';
+        }
+        h4 {
+            flex-grow: 1;
         }
         h3, h4 {
             margin: 0;
@@ -21,6 +23,7 @@ const Figure = styled.figure`
         }
     }
 `
+//scss
 
 const Imagem = styled.img`
     max-width: 100%;
@@ -43,10 +46,8 @@ const ImagemGaleria = ({ foto }) => {
             <h3>{foto.titulo}</h3>
             <Rodape>
                 <h4>{foto.fonte}</h4>
-                <div>
-                    <img src="/imagens/icones/favorito.png" alt="Icone de favorito" />
-                    <img src="/imagens/icones/open.png" alt="Icone de expandir" />
-                </div>
+                <img src="/imagens/icones/favorito.png" alt="Icone de favorito" />
+                <img src="/imagens/icones/open.png" alt="Icone de expandir" />
             </Rodape>
         </figcaption>
     </Figure>)

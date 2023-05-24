@@ -11,6 +11,7 @@ const ColunaFotos = styled.section`
 
 const Imagem = styled.img`
     max-width: 212px;
+    border-radius: 20px;
 `
 
 const Botao = styled.button`
@@ -29,7 +30,7 @@ const Botao = styled.button`
 const Populares = () => {
     return (
         <section>
-            <Titulo>Populares</Titulo>
+            <Titulo $alinhamento='center'>Populares</Titulo>
             <ColunaFotos>
                 {fotos.map(foto => <Imagem key={foto.id} src={foto.path} alt={foto.alt}/>)}
             </ColunaFotos>

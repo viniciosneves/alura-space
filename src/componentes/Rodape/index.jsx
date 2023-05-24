@@ -23,7 +23,7 @@ const IconeContainer = styled.ul`
 
 const RodapeTexto = styled.p`
     font-size: 16px;
-    color: #FFFFFF;
+    color: white;
     margin: 0;
 `;
 

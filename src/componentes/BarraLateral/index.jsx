@@ -5,11 +5,11 @@ const BarraLateral = () => {
     return (<aside>
         <nav>
             <ListaNavegacao>
-                <ItemNavegacao texto="Inicio" iconeSrc="/icones/home-ativo.png" ativo={true}/>
-                <ItemNavegacao texto="Mais vistas" iconeSrc="/icones/mais-curtidas-inativo.png" />
-                <ItemNavegacao texto="Mais curtidas" iconeSrc="/icones/mais-vistas-inativo.png" />
-                <ItemNavegacao texto="Novas" iconeSrc="/icones/novas-inativo.png" />
-                <ItemNavegacao texto="Surpreenda-me" iconeSrc="/icones/surpreenda-me-inativo.png" />
+                <ItemNavegacao texto="Inicio" iconeSrc="/imagens/icones/home-ativo.png" ativo={true}/>
+                <ItemNavegacao texto="Mais vistas" iconeSrc="/imagens/icones/mais-curtidas-inativo.png" />
+                <ItemNavegacao texto="Mais curtidas" iconeSrc="/imagens/icones/mais-vistas-inativo.png" />
+                <ItemNavegacao texto="Novas" iconeSrc="/imagens/icones/novas-inativo.png" />
+                <ItemNavegacao texto="Surpreenda-me" iconeSrc="/imagens/icones/surpreenda-me-inativo.png" />
             </ListaNavegacao>
         </nav>
     </aside>)

@@ -28,7 +28,7 @@ const TagsContainer = styled.section`
     justify-content: space-between;
 `
 
-const Form = styled.form`
+const Div = styled.div`
     display: flex;
     gap: 24px;
     justify-content: end;
@@ -38,9 +38,10 @@ const Tags = ({ setTag }) => {
     return (
         <TagsContainer>
             <TagTitulo>Busque por tags:</TagTitulo>
-            <Form>
+            <Div>
+                <Tag type="button" onClick={() => setTag(0)}>Todas</Tag>
                 {tags.map(tag => <Tag type="button" key={tag.id} onClick={() => setTag(tag.id)}>{tag.titulo}</Tag>)}
-            </Form>
+            </Div>
         </TagsContainer>
     )
 }
