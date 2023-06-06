@@ -2,7 +2,7 @@ import { styled } from "styled-components"
 import Titulo from "../Titulo"
 import Tags from "./Tags"
 import Populares from "./Populares"
-import ImagemGaleria from "./ImagemGaleria"
+import ImagemGaleria from "../ImagemGaleria"
 
 const GaleriaContainer = styled.div`
     display: flex;
@@ -20,7 +20,7 @@ const ImagensContainer = styled.section`
     gap: 28px;
 `
 
-const Galeria = ({ fotos = [], setTag }) => {
+const Galeria = ({ fotos = [], setTag, aoZoomSolicitado, alternarFavorito }) => {
 
     return (
         <>
@@ -29,7 +29,12 @@ const Galeria = ({ fotos = [], setTag }) => {
                 <SectionFluida>
                     <Tags setTag={setTag}/>
                     <ImagensContainer>
-                        {fotos.map(foto => <ImagemGaleria key={foto.id} foto={foto} />)}
+                        {fotos.map(foto => <ImagemGaleria 
+                            alternarFavorito={alternarFavorito}
+                            aoPedirZoom={aoZoomSolicitado} 
+                            key={foto.id} 
+                            foto={foto} />)
+                        }
                     </ImagensContainer>
                 </SectionFluida>
                 <Populares />
